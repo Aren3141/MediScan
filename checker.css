@@ -1,0 +1,119 @@
+/*
+! style/checker.css
+! MediScan AI – Symptom Checker
+! updated to match the main style
+! @woldu
+*/
+
+.form-section {
+    margin: 120px auto;
+    max-width: 620px;
+    padding: 60px 45px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    box-shadow:
+        0 30px 60px rgba(0, 0, 0, 0.6),
+        inset 0 0 30px rgba(255, 255, 255, 0.02);
+
+    color: white;
+}
+
+.form-section h1 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 40px;
+    text-align: center;
+    max-width: 420px;
+}
+
+
+#symptom-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #ccc;
+}
+
+input {
+    width: 100%;
+    padding: 16px 18px;
+    font-size: 16px;
+
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input::placeholder {
+    color: #777;
+}
+
+input:focus {
+    border-color: #00f2fe;
+    box-shadow: 0 0 14px rgba(0, 242, 254, 0.45);
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+.un-get-rec-ai {
+    margin-top: 30px;
+    padding: 16px 45px;
+
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+
+    color: #000;
+    background: linear-gradient(90deg, #4facfe, #00f2fe);
+
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+
+    align-self: center;
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.un-get-rec-ai:hover {
+    transform: scale(1.07);
+    box-shadow:
+        0 0 30px rgba(0, 242, 254, 0.6),
+        0 0 60px rgba(79, 172, 254, 0.3);
+}
+
+@media (max-width: 600px) {
+    .form-section {
+        margin: 80px 20px;
+        padding: 40px 25px;
+    }
+
+    .form-section h1 {
+        font-size: 2.1rem;
+    }
+}
