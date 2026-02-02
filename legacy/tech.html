@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tech | MediScan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="futuristic-body">
+
+    <nav id="navbar">
+        <div class="logo">MediScan AI</div>
+
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="checker.html">Symptom Checker</a></li>
+            <li><a href="tech.html" class="active">AI Tech</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="sub-header">
+        <h1>How AI is Transforming Medicine</h1>
+        <p>Exploring the frontier of machine learning and clinical care.</p>
+    </header>
+
+    <main class="container">
+        <section class="tech-grid">
+            <div class="glass-card">
+                <div class="card-icon">👁️</div>
+                <h3>Computer Vision</h3>
+                <p>AI algorithms analyze X-rays, MRIs, and CT scans to detect tumors or fractures with higher accuracy
+                    than the human eye in some early-stage cases.</p>
+            </div>
+
+            <div class="glass-card">
+                <div class="card-icon">🧬</div>
+                <h3>Predictive Analytics</h3>
+                <p>By processing vast amounts of patient data, AI can predict which patients are at risk of developing
+                    chronic diseases like diabetes before symptoms appear.</p>
+            </div>
+
+            <div class="glass-card">
+                <div class="card-icon">🤖</div>
+                <h3>Robotic Surgery</h3>
+                <p>AI-powered robots assist surgeons in performing minimally invasive procedures with precision that
+                    reduces recovery time and human error.</p>
+            </div>
+        </section>
+
+        <section class="interaction-box glass-card">
+            <h2>Interactive AI Insight</h2>
+            <p id="fact-display">Click the button below to generate a real-world AI healthcare insight.</p>
+            <button onclick="getNewFact()" class="btn-primary">Generate Insight</button>
+        </section>
+
+        <section class="ethics-box glass-card">
+            <h2>The Ethical Frontier</h2>
+            <p>While AI offers incredible benefits, we must address <strong>Algorithmic Bias</strong> and <strong>Data
+                    Privacy</strong>. Ensuring that AI models are trained on diverse datasets is vital to preventing
+                healthcare inequality.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3>MediScan AI</h3>
+            <p>Designed in London. Built for the World.</p>
+            <p class="tiny-text">&copy; 2026 Kainos Work Experience Team</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
